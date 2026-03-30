@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fff9fa] text-[#4a4a4a] font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-[#d63384];
+  }
+}
+
+.girly-button {
+  @apply bg-[#f8d7da] text-[#d63384] border border-[#f5c6cb] rounded-full px-8 py-4 font-bold uppercase tracking-widest transition-all hover:bg-[#f1b0b7] active:scale-95 shadow-sm;
+}
+
+.girly-card {
+  @apply bg-white rounded-[40px] shadow-[0_10px_30px_rgba(214,51,132,0.05)] border border-[#f8d7da]/30 overflow-hidden transition-all hover:shadow-[0_20px_40px_rgba(214,51,132,0.1)];
+}
+
+::selection {
+  @apply bg-[#f8d7da] text-[#d63384];
+}
