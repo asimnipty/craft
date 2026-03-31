@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx backend/server.js",
     "build": "vite build",
-    "deploy": "gh-pages -d dist",
+     "deploy": "npm run build && gh-pages -d dist" ,
     "start": "node backend/server.js",
     "preview": "vite preview",
     "clean": "rm -rf dist",
