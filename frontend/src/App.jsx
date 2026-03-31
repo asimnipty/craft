@@ -13,7 +13,7 @@ import { Toaster } from 'sonner';
 export default function App() {
   return (
     <CartProvider>
-      <Router>
+      <Router  basename="/craft">
         <div className="min-h-screen flex flex-col bg-[#f5f5f5]">
           <Navbar />
           <main className="flex-grow">
